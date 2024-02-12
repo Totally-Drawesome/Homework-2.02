@@ -1,0 +1,96 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    flex-direction: row;
+    /*shifts items on main axis*/
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img{
+    width: 75%;
+    align-self: center;
+    border: 10px;
+}
+
+.froggy{
+    border: 10px solid blue;
+    animation: bordercolor 5s infinite;
+}
+
+.frogger{
+    animation: frogimagesize 5s infinite;
+}
+
+
+@keyframes backgroundBG{
+    /* stage - properties - values */
+    0%{
+        text-decoration: red;
+    }
+    20%{
+        text-decoration: yellow;
+    }
+    50%{
+        text-decoration: blue;
+    }
+    100%{
+        text-decoration: red;
+    }
+}
+
+@keyframes bordercolor{
+    0%{
+        border-color: red;
+    }
+    20%{
+        border-color: yellow;
+    }
+    50%{
+        border-color: blue;
+    }
+    100%{
+        border-color: red;
+    }
+}
+
+@keyframes frogimagesize{
+    0%{
+        width: 75%;
+    }
+    25%{
+        width: 10%
+    }
+    50%{
+        width: 100%;
+    }
+    75%{
+        width: 45%
+    }
+    100%{
+        width: 75%px;
+    }
+}
